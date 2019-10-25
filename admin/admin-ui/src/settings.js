@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Canal Admin',
+  title: 'Monitor Admin',
 
   /**
    * @type {boolean} true | false

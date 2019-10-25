@@ -73,14 +73,14 @@ export const constantRoutes = [
     path: '/canalServer',
     component: Layout,
     redirect: '/canalServer/nodeServers',
-    name: 'Canal Server',
-    meta: { title: 'Canal Server', icon: 'example' },
+    name: 'MySQL Monitor',
+    meta: { title: 'MySQL Monitor', icon: 'example' },
     children: [
       {
         path: 'canalClusters',
-        name: 'Canal 集群管理',
+        name: 'Zookeeper 管理',
         component: () => import('@/views/canalServer/CanalCluster'),
-        meta: { title: '集群管理', icon: 'tree' }
+        meta: { title: 'Zookeeper 管理', icon: 'tree' }
       },
       {
         path: 'nodeServers',
@@ -97,22 +97,22 @@ export const constantRoutes = [
       },
       {
         path: 'canalInstances',
-        name: 'Instance 管理',
+        name: '实例管理',
         component: () => import('@/views/canalServer/CanalInstance'),
-        meta: { title: 'Instance 管理', icon: 'nested' }
+        meta: { title: '实例管理', icon: 'nested' }
       },
       {
         path: 'canalInstance/add',
-        name: '新建Instance配置',
+        name: '新建实例配置',
         component: () => import('@/views/canalServer/CanalInstanceAdd'),
-        meta: { title: '新建Instance配置' },
+        meta: { title: '新建实例配置' },
         hidden: true
       },
       {
         path: 'canalInstance/modify',
-        name: '修改Instance配置',
+        name: '修改实例配置',
         component: () => import('@/views/canalServer/CanalInstanceUpdate'),
-        meta: { title: '修改Instance配置' },
+        meta: { title: '修改实例配置' },
         hidden: true
       },
       {
